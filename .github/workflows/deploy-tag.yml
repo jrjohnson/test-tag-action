@@ -43,7 +43,7 @@ jobs:
           - mysql-demo
     steps:
     - name: ${{ matrix.image }} to Github Registry
-        run: |
-          echo ${{needs.tags.outputs.major}}
-          echo ${{needs.tags.outputs.minor}}
-          echo ${{needs.tags.outputs.patch}}
+      run: |
+        echo ${{needs.tags.outputs.major}}
+        echo ${{needs.tags.outputs.minor}}
+        echo ${{needs.tags.outputs.patch}}
